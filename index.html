@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盛秋悦·全谷米 - 健康控糖主食</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">盛秋悦·全谷米</a>
+        </div>
+    </nav>
+    
+    <div class="container mt-4">
+        <div class="jumbotron text-center">
+            <h1>低GI健康主食</h1>
+            <p>100%全谷物，适合糖尿病人群和控糖人士</p>
+            <a href="#subscribe" class="btn btn-primary">订阅最新信息</a>
+        </div>
+    </div>
+    
+    <div class="container mt-4">
+        <h2>产品特点</h2>
+        <ul>
+            <li>低GI值，稳定血糖</li>
+            <li>100%全谷物，富含膳食纤维</li>
+            <li>市场性价比最高，仅28元/500g</li>
+            <li>天然健康，适合每日主食</li>
+        </ul>
+    </div>
+    
+    <div class="container mt-4">
+        <h2>关于我们</h2>
+        <p>盛秋悦·全谷米专注于提供高品质、低GI健康主食，运用生物科技优化谷物成分，为控糖人群带来更好的饮食选择。</p>
+    </div>
+    
+    <div class="container mt-4">
+        <h2>用户反馈</h2>
+        <p>我们的客户对盛秋悦·全谷米的评价：</p>
+        <blockquote class="blockquote">
+            <p>“吃了盛秋悦·全谷米，血糖管理变得更轻松！”</p>
+        </blockquote>
+        <blockquote class="blockquote">
+            <p>“口感细腻，完全不输普通大米！”</p>
+        </blockquote>
+    </div>
+    
+    <div class="container mt-4">
+        <h2>权威文献</h2>
+        <p>低GI饮食对健康的影响已被多项研究证实，以下是相关文献推荐：</p>
+        <ul>
+            <li><a href="#">《低GI饮食与糖尿病管理》</a></li>
+            <li><a href="#">《全谷物食品的健康益处》</a></li>
+        </ul>
+    </div>
+    
+    <div class="container mt-4">
+        <h2>厂房设备 & 先进科研</h2>
+        <p>我们拥有先进的生产线和食品检测设备，严格把控每一粒大米的品质。</p>
+    </div>
+    
+    <div class="container mt-4">
+        <h2>远销欧美</h2>
+        <p>盛秋悦·全谷米已进入多个国际市场，深受欧美消费者喜爱。</p>
+    </div>
+    
+    <div class="container mt-4" id="subscribe">
+        <h2>订阅获取最新资讯</h2>
+        <input type="email" id="email" class="form-control" placeholder="输入你的邮箱">
+        <button class="btn btn-success mt-2" onclick="subscribe()">订阅</button>
+        <p id="message" class="mt-2"></p>
+    </div>
+
+    <div class="container mt-4">
+        <h2>联系我们</h2>
+        <p>如果您对产品感兴趣，欢迎联系我们：</p>
+        <p>Email: contact@shengqiuyue.com</p>
+        <p>电话: +86 123 4567 8901</p>
+    </div>
+
+    <script>
+        function subscribe() {
+            const email = document.getElementById('email').value;
+            if (email) {
+                document.getElementById('message').innerText = "订阅成功！";
+            } else {
+                document.getElementById('message').innerText = "请输入有效的邮箱地址。";
+            }
+        }
+    </script>
+</body>
+</html>
